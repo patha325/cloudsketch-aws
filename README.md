@@ -2,6 +2,14 @@
 
 A browser-based, AWS-aware architecture canvas that turns diagrams into infrastructure as code. Version 0.1 exports Terraform and TypeScript AWS CDK and keeps AWS credentials out of the browser.
 
+## Accelerators
+
+- **AWS Lakehouse** — an AWS-native alternative pattern to a Databricks-style lakehouse, using S3, Glue, Lake Formation, EMR Serverless, Athena, Redshift Serverless, SageMaker and QuickSight.
+- **File-grounded LLM Chat** — authenticated file upload and RAG chat using S3, Lambda, Bedrock Knowledge Bases and OpenSearch Serverless.
+- **Multi-agent Report Factory** — Bedrock supervisor and specialist agents analyse structured and unstructured data, write and review reports, then publish them to S3.
+
+These are editable architecture starting points. IaC exporters emit complete resources where the generator has coverage; newer services currently remain visual architecture components until their production-specific IAM, networking and account settings are configured.
+
 ## Run
 
 ```bash
