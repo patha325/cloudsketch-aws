@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {terraform,cdk,validateGraph} from './generator.js';
+const graph={nodes:[{id:'v',type:'vpc',name:'Main VPC',props:{cidr:'10.0.0.0/16'}},{id:'s',type:'subnet',name:'Public',props:{cidr:'10.0.1.0/24',public:'true'}},{id:'b',type:'s3',name:'valid-bucket',props:{versioning:'true'}}],edges:[{id:'e',source:'v',target:'s'}]};
+test('terraform emits linked VPC and subnet',()=>{const x=terraform(graph);assert.match(x,/aws_vpc\.main_vpc\.id/);assert.match(x,/aws_s3_bucket/)});test('cdk emits stack',()=>assert.match(cdk(graph),/export class CloudSketchStack/));test('valid graph has no errors',()=>assert.equal(validateGraph(graph).filter(x=>x.level==='error').length,0));
