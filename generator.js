@@ -9,7 +9,22 @@ export const SERVICES = {
   rds:{label:'RDS PostgreSQL',color:'#3b48cc',category:'Database',defaults:{instanceClass:'db.t3.micro',engineVersion:'16.3'}},
   apigw:{label:'API Gateway',color:'#a166ff',category:'Integration',defaults:{}},
   iam_role:{label:'IAM Role',color:'#dd344c',category:'Security',defaults:{service:'lambda.amazonaws.com'}},
-  cloudwatch:{label:'CloudWatch Log Group',color:'#e7157b',category:'Management',defaults:{retentionDays:'14'}}
+  cloudwatch:{label:'CloudWatch Log Group',color:'#e7157b',category:'Management',defaults:{retentionDays:'14'}},
+  kinesis:{label:'Kinesis Data Streams',color:'#8c4fff',category:'Analytics',defaults:{shards:'1'}},
+  glue:{label:'AWS Glue Data Catalog',color:'#8c4fff',category:'Analytics',defaults:{database:'analytics'}},
+  lakeformation:{label:'AWS Lake Formation',color:'#8c4fff',category:'Analytics',defaults:{}},
+  emr_serverless:{label:'EMR Serverless',color:'#8c4fff',category:'Analytics',defaults:{releaseLabel:'emr-7.5.0'}},
+  athena:{label:'Amazon Athena',color:'#8c4fff',category:'Analytics',defaults:{workgroup:'primary'}},
+  redshift_serverless:{label:'Redshift Serverless',color:'#8c4fff',category:'Analytics',defaults:{baseCapacity:'8'}},
+  quicksight:{label:'Amazon QuickSight',color:'#8c4fff',category:'Analytics',defaults:{}},
+  sagemaker:{label:'Amazon SageMaker',color:'#01a88d',category:'Machine Learning',defaults:{}},
+  cognito:{label:'Amazon Cognito',color:'#dd344c',category:'Security',defaults:{}},
+  bedrock:{label:'Amazon Bedrock',color:'#01a88d',category:'Generative AI',defaults:{model:'anthropic.claude-3-5-sonnet'}},
+  bedrock_kb:{label:'Bedrock Knowledge Base',color:'#01a88d',category:'Generative AI',defaults:{}},
+  bedrock_agent:{label:'Bedrock Agent',color:'#01a88d',category:'Generative AI',defaults:{role:'specialist'}},
+  opensearch:{label:'OpenSearch Serverless',color:'#3b48cc',category:'Database',defaults:{}},
+  step_functions:{label:'AWS Step Functions',color:'#e7157b',category:'Integration',defaults:{}},
+  eventbridge:{label:'Amazon EventBridge',color:'#e7157b',category:'Integration',defaults:{}}
 };
 
 const id=s=>s.replace(/[^a-zA-Z0-9_]/g,'_').toLowerCase();
