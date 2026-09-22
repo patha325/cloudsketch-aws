@@ -1,1 +1,1 @@
-{"name":"cloudsketch-aws","version":"0.2.0","type":"module","scripts":{"test":"node --test"},"license":"MIT"}
+{"name":"cloudsketch-aws","version":"0.3.0","type":"module","scripts":{"test":"node --test"},"license":"MIT"}
