@@ -1,6 +1,6 @@
 # CloudSketch AWS
 
-A browser-based, AWS-aware architecture canvas that turns diagrams into infrastructure as code. Version 0.1 exports Terraform and TypeScript AWS CDK and keeps AWS credentials out of the browser.
+A dependency-free browser application written in HTML, CSS and JavaScript. Version 0.2 exports Terraform, TypeScript AWS CDK and CloudFormation YAML while keeping AWS credentials out of the browser. Python is not an application dependency; the documented Python command only starts a convenient local static-file server.
 
 ## Accelerators
 
@@ -33,8 +33,8 @@ Generated code is a starting point, not a security review. Validate IAM, network
 
 ## Next milestones
 
-1. Complete CDK parity and CloudFormation YAML export.
-2. Nested VPC/subnet visual containers and ports with typed connection rules.
-3. AWS Pricing API estimates and Well-Architected checks.
+1. Expand CDK and CloudFormation coverage for Bedrock, OpenSearch Serverless, Redshift Serverless and Step Functions.
+2. Add nested VPC/subnet visual containers and typed connection ports.
+3. Add AWS Pricing API estimates and deeper Well-Architected checks.
 4. Import from Terraform state or CloudFormation.
-5. GitHub integration and reviewed deployment pipelines.
+5. Add reviewed deployment pipelines.
