@@ -1,6 +1,6 @@
 # CloudSketch AWS
 
-A dependency-free browser application written in HTML, CSS and JavaScript. Version 0.2 exports Terraform, TypeScript AWS CDK and CloudFormation YAML while keeping AWS credentials out of the browser. Python is not an application dependency; the documented Python command only starts a convenient local static-file server.
+A dependency-free browser application written in HTML, CSS and JavaScript. Version 0.3 exports Terraform, TypeScript AWS CDK and CloudFormation YAML, estimates monthly AWS costs, and performs design-time Well-Architected checks while keeping AWS credentials out of the browser. Python is not an application dependency; the documented Python command only starts a convenient local static-file server.
 
 ## Accelerators
 
@@ -37,10 +37,15 @@ Generated code is a starting point, not a security review. Validate IAM, network
 - Validation runs before deployment.
 - Deployment stays explicit; the app does not collect AWS credentials.
 
-## Next milestones
+## Roadmap
 
-1. Expand CDK and CloudFormation coverage for Bedrock, OpenSearch Serverless, Redshift Serverless and Step Functions.
-2. Add nested VPC/subnet visual containers and typed connection ports.
-3. Add AWS Pricing API estimates and deeper Well-Architected checks.
-4. Import from Terraform state or CloudFormation.
-5. Add reviewed deployment pipelines.
+- [x] Terraform and TypeScript AWS CDK export
+- [x] CloudFormation YAML export
+- [x] Separate editable architecture accelerators
+- [x] Typed dependency and deployment-readiness validation
+- [x] AWS Price List API proxy support and transparent fallback estimates
+- [x] Well-Architected checks across all six pillars
+- [ ] Expand IaC coverage for Bedrock, OpenSearch Serverless, Redshift Serverless and Step Functions
+- [ ] Add nested VPC/subnet visual containers and typed connection ports
+- [ ] Import from Terraform state or CloudFormation
+- [ ] Add reviewed deployment pipelines
