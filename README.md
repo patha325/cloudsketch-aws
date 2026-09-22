@@ -5,7 +5,7 @@ A browser-based, AWS-aware architecture canvas that turns diagrams into infrastr
 ## Run
 
 ```bash
-python3 -m http.server 8080 --directory aws-architect
+python3 -m http.server 8080
 ```
 
 Open `http://localhost:8080`. Drag services onto the canvas, choose **Connect**, click a source and target, validate, then export code.
