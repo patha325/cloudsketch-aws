@@ -10,6 +10,12 @@ A dependency-free browser application written in HTML, CSS and JavaScript. Versi
 
 These are editable architecture starting points. IaC exporters emit complete resources where the generator has coverage; newer services currently remain visual architecture components until their production-specific IAM, networking and account settings are configured.
 
+## Cost and Well-Architected review
+
+The review panel provides transparent monthly usage assumptions and heuristic findings across all six AWS Well-Architected pillars. Configure an HTTPS server-side pricing endpoint to replace fallback assumptions with rates resolved through the AWS Price List Query or Bulk API. The browser never receives AWS credentials. The endpoint accepts `{ region, resources }` and returns `{ currency, source, total, items }`.
+
+Estimates exclude taxes, support, data transfer, negotiated discounts, Savings Plans and many service-specific dimensions. They are suitable for early comparison, not billing forecasts. The Well-Architected score is a design-time aid and does not replace the AWS Well-Architected Tool or a formal workload review.
+
 ## Run
 
 ```bash
